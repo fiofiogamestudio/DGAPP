@@ -93,7 +93,7 @@ public class AppClient : MonoBehaviour
     {
         try
         {
-            client = new TcpClient(serverIP, 8080);  
+            client = new TcpClient(serverIP, 8080);
             stream = client.GetStream();
             LogToScreen("Connected to the server at " + serverIP);
             BeginRead();
